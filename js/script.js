@@ -52,8 +52,10 @@ if (personalMovieDB.count < 10) {
     alert('Просмотрено довольно мало фильмов');
 } else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
     alert('Вы классический зритель');
-} else {
+} else if (personalMovieDB > 30) {
     alert('Вы киноман');
+} else {
+    alert ('Произошла ошибка');
 }
 
 // personalMovieDB.movies[lastFilmName2] = lastFilmRaiting2;
