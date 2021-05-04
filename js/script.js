@@ -27,7 +27,7 @@ const personalMovieDB = {
 // }
 // while (i < 2);
 
-for (let i = 0; i < 2; i++) {
+for (let i=0; i<2; i++) {
     const lastFilmName = prompt('Один из последних просмотренных фильмов?', '');
     const lastFilmRaiting = prompt('На сколько оцените его?', '');
     if (lastFilmName != null && lastFilmRaiting != null && lastFilmName != '' && lastFilmRaiting != '' && lastFilmName.length < 50) {
@@ -36,6 +36,7 @@ for (let i = 0; i < 2; i++) {
         i--;
     }
 }
+
 
 if (personalMovieDB.count < 10) {
     alert('Просмотрено довольно мало фильмов');
