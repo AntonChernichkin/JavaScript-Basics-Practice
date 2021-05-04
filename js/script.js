@@ -27,16 +27,26 @@ const personalMovieDB = {
 // }
 // while (i < 2);
 
-for (let i=0; i<2; i++) {
+// for (let i=0; i<2; i++) {
+//     const lastFilmName = prompt('Один из последних просмотренных фильмов?', '');
+//     const lastFilmRaiting = prompt('На сколько оцените его?', '');
+//     if (lastFilmName != null && lastFilmRaiting != null && lastFilmName != '' && lastFilmRaiting != '' && lastFilmName.length < 50) {
+//         personalMovieDB.movies[lastFilmName] = lastFilmRaiting;
+//     } else {
+//         i--;
+//     }
+// }
+
+while (i < 2) {
     const lastFilmName = prompt('Один из последних просмотренных фильмов?', '');
     const lastFilmRaiting = prompt('На сколько оцените его?', '');
+    i++;
     if (lastFilmName != null && lastFilmRaiting != null && lastFilmName != '' && lastFilmRaiting != '' && lastFilmName.length < 50) {
         personalMovieDB.movies[lastFilmName] = lastFilmRaiting;
     } else {
         i--;
     }
 }
-
 
 if (personalMovieDB.count < 10) {
     alert('Просмотрено довольно мало фильмов');
